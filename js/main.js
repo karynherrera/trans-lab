@@ -6,4 +6,15 @@ window.data = ()=>{
 			console.log(data);
 			renderInfo(data);//esto me muestra en el dom la respuesta
 		})
+
+
+		const menu = document.getElementById('menu');
+		const btnToggler = document.getElementById('btnNav');
+		
+		btnToggler.addEventListener('click', ()=> {
+			//event.preventDefault();
+			
+			return menu.style.display = 'none';
+		});
 }
+

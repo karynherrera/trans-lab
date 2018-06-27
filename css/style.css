@@ -1,4 +1,26 @@
-.navbar{
+#navbar{
   text-align: center;
-  background-color: #404242;
+  width: 100%;
+  background-color: #333333;
 }
+.wrapper{
+  text-align: center;
+  
+}
+#btnNav{
+  color: #ffffff;
+  
+}
+#menu{
+  display: inline;
+  position: relative;
+  background-color: #ffffff;
+  border-color: #333333 solid;
+  left:0%;
+}
+#TransLab{
+  text-align: center;
+  position: relative;
+  left:30%;
+}
+
