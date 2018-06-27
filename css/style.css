@@ -5,6 +5,8 @@
 }
 .wrapper{
   text-align: center;
+  position: relative;
+  left:0%;
   
 }
 #btnNav{
@@ -24,3 +26,35 @@
   left:30%;
 }
 
+#title{
+  text-align: center;
+  width: 100%;
+  background-color: #333333;
+  color:#ffffff;
+}
+
+.btn-secondary{
+  text-align: center;
+  width: 100%;
+  background-color: #404242;
+}
+
+#content{
+  text-align: center;
+  width: 100%;
+}
+
+.btnPrin{
+  background-color: #FFA200;
+  border-radius: 0%;
+  border: none;
+  color: #404242;
+  width: 100%;
+}
+
+#contentBtn{
+  padding: 20%;
+}
+.cols{
+  padding: 20%;
+}
