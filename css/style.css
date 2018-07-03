@@ -132,6 +132,10 @@ input{
   width: 60%;
 }
 
+.espacio{
+  padding: 3%;
+}
+
 .dtsIngresados{
   color: #333333;
   font-family: Helvetica;
@@ -140,4 +144,8 @@ input{
 #accordion{
   text-align: center;
   width: 100%;
+}
+
+#selectCard{
+  width: 50%;
 }

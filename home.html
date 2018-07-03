@@ -48,14 +48,14 @@ crossorigin="anonymous">
         <section class="row">
           <section class="col-12">
             <article><p id="emailIngresado" class="dtsIngresados">Email</p></article>
-            <input class="form-control sm-2 inputs"  size="100" id="inputCorreo"></section>
+            <input class="form-control sm-2 inputs inputCard"  size="100" placeholder="Ingresar Numero de Tarjeta" ></section>
             <button class="btn sm-0 justify-align-center" type="button" id="btnAddCard">Agregar Tarjeta</button>
             <section class="col-12">
             <article><p id="emailIngresado" class="dtsIngresados">Tarjetas Ingresadas</p></article></section>
         </section>
       </section> <!--Fin de seccion usuario--> 
       <!--Inicio Sección de Preguntas Frecuentes-->
-        <section class="col-12 justify-align-center" id="sectionFqs">
+        <section class="col-12 justify-align-center sectionHide" id="sectionFqs">
             <article id="headColor"><p>Preguntas Frecuentes</p></article>
             <section class="row">
                           <div id="accordion" role="tablist">
@@ -107,14 +107,28 @@ crossorigin="anonymous">
                                   </div>
                                 </div>
                               </div>
-                            </div>
+                            
                             </div><!--Acá termina el acordeon-->
-                          </section> <!--fin de row-->
-          
+            </section> <!--fin de row--> 
         </section> <!--Fin de preguntas frecuentes--> 
       <!--Inicio Sección de Ver Saldo-->
         <section class="col-12 justify-align-center" id="sectionSaldo">
-          
+          <section class="row justify-align-center">
+              <section class="col-12 espacio"></section>
+            <section class="col-12 justify-align-center">
+            <input class="form-control sm-2 inputs inputCard" id="saldoInput" placeholder="Ingresar Numero de Tarjeta" size="100">
+          </section>
+          <section class="col-12 justify-align-center">
+              <section class="row espacio"></section>
+              <section class="col-6">
+                  <article><span><p class="dtsIngresados">Tarifa</p></span></article>
+                  <select id="selectCard"  title="seleccion de Tarjeta">
+                      <option value="---"></option> 
+                  </select>
+              </section>
+            
+            </section>
+          </section><!--Fin de row-->
         </section><!--Fin de seccion ver saldo--> 
       </section> <!--Fin de contenedor-->     
     </section> <!--fin de grid principal-->
