@@ -25,23 +25,98 @@ crossorigin="anonymous">
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <form>
-                <button class="btn sm-0 btnPrin" type="button">Ver Saldo</button>
-                <button class="btn sm-0 btnPrin" type="button" >Calcular Tarifa</button>
-                <button class="btn sm-0 btnPrin" type="button" >Perfil</button>
-                <button class="btn sm-0 btnPrin" type="button" >Preguntas Frecuentes</button>
+                <button class="btn sm-0 btnPrin" id="navSaldo" type="button">Ver Saldo</button>
+                <button class="btn sm-0 btnPrin" id="navTarifa" type="button" >Calcular Tarifa</button>
+                <button class="btn sm-0 btnPrin" id="P" type="button" >Perfil</button>
+                <button class="btn sm-0 btnPrin" id="navFqs" type="button" >Preguntas Frecuentes</button>
             </form>
           </div>
-        </nav>                
-        <section class="col-12 justify-align-center sectionButtons">
-          <button class="btn sm-0 btnMenu justify-align-center" type="button">Ver Saldo</button>
-          <button class="btn sm-0 btnMenu justify-align-center" type="button" >Calcular Tarifa</button>
-          <button class="btn sm-0 btnMenu justify-align-center" type="button" >Perfil</button>
-          <button class="btn sm-0 btnMenu justify-align-center" type="button" >Preguntas Frecuentes</button>
+        </nav>   
+      </section><!--fin de col principal-->  
+      <!--Inicio de contenedor-->          
+      <section class="col-12" id="contenedor"> 
+        <!--Inicio Sección de Botones de Menú-->
+        <section class="col-12 justify-align-center sectionHide" id="sectionButtons" >
+          <button class="btn sm-0 btnMenu justify-align-center" id="menuVerSaldo" type="button">Ver Saldo</button>
+          <button class="btn sm-0 btnMenu justify-align-center" id="menuCalcularTarifa" type="button" >Calcular Tarifa</button>
+          <button class="btn sm-0 btnMenu justify-align-center" id="menuPerfil" type="button" >Perfil</button>
+          <button class="btn sm-0 btnMenu justify-align-center" id="menuFqs" type="button" >Preguntas Frecuentes</button>
+        </section> <!--Fin de seccion menu--> 
+        <!--Inicio Sección de Perfil de Usuario-->
+        <section class="col-12 justify-align-center sectionHide" id="sectionPerfil" >
+          <img src="docs/user.jpg" id="user" class="img-fluid justify-align-center" alt="Responsive image">
+        <section class="row">
+          <section class="col-12">
+            <article><p id="emailIngresado" class="dtsIngresados">Email</p></article>
+            <input class="form-control sm-2 inputs"  size="100" id="inputCorreo"></section>
+            <button class="btn sm-0 justify-align-center" type="button" id="btnAddCard">Agregar Tarjeta</button>
+            <section class="col-12">
+            <article><p id="emailIngresado" class="dtsIngresados">Tarjetas Ingresadas</p></article></section>
         </section>
-        <section class="col-12 justify-align-center sectionPerfil">
-          <section class="row" id="fondoUser"><img src="docs/user.jpg" id="user" class="img-fluid" alt="Responsive image"></section>
-        </section>
-      </section><!--fin de col principal-->
+      </section> <!--Fin de seccion usuario--> 
+      <!--Inicio Sección de Preguntas Frecuentes-->
+        <section class="col-12 justify-align-center" id="sectionFqs">
+            <article id="headColor"><p>Preguntas Frecuentes</p></article>
+            <section class="row">
+                          <div id="accordion" role="tablist">
+                            <!--Acá empieza la card de la primera pregunta-->
+                              <div class="card"> 
+                                <div class="card-header" role="tab" id="headingOne">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="">
+                                     Pregunta 1
+                                    </a>
+                                  </h5>
+                                </div>
+                                <!--Acá empieza la card de la respuesta de la primera pregunta-->
+                                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"> 
+                                  <div class="card-body">
+                                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Acá empieza la card de la segunda pregunta-->
+                              <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Pregunta 2
+                                    </a>
+                                  </h5>
+                                </div>
+                                <!--Acá empieza la card de la respuesta de la segunda pregunta-->
+                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                  <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                  </div>
+                                </div>
+                              </div>
+                                     <!--Acá empieza la card de la tercera pregunta-->
+                             <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Pregunta 3
+                                    </a>
+                                  </h5>
+                                </div>
+                                <!--Acá empieza la card de la respuesta de la tercera pregunta-->
+                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                  <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div><!--Acá termina el acordeon-->
+                          </section> <!--fin de row-->
+          
+        </section> <!--Fin de preguntas frecuentes--> 
+      <!--Inicio Sección de Ver Saldo-->
+        <section class="col-12 justify-align-center" id="sectionSaldo">
+          
+        </section><!--Fin de seccion ver saldo--> 
+      </section> <!--Fin de contenedor-->     
     </section> <!--fin de grid principal-->
     <!-- My JavaScript -->
     <script src="js/main.js"></script>

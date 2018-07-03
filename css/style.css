@@ -87,13 +87,57 @@
   padding: 10px;
 }
 
-#fondoUser{
+#sectionPerfil{
   text-align: center;
-  color:#FFA200;
   padding: 10px;
 }
 
 #user{
   text-align: center;
+  width: 40%;
   border-radius: 50%;
+  border-color: #FFA200 solid 5px;
+  margin: 5%;
+}
+
+/*#sectionButtons{
+  display: none;
+}*/
+
+.sectionHide{
+  display: none;
+}
+
+#contenedor{
+  background-color: #DDDEE0;
+  height: 100%;
+}
+#headColor{
+  text-align: center;
+  font-family: Helvetica;
+  color: #FFA200;
+  font-size: 150%;
+}
+
+#btnAddCard{
+  background-color: #FFA200;
+  border-radius: 0%;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  margin: 5%;
+}
+
+input{
+  width: 60%;
+}
+
+.dtsIngresados{
+  color: #333333;
+  font-family: Helvetica;
+}
+
+#accordion{
+  text-align: center;
+  width: 100%;
 }

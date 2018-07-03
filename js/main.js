@@ -6,15 +6,28 @@ window.data = ()=>{
 			console.log(data);
 			renderInfo(data);//esto me muestra en el dom la respuesta
 		})
-
-
-		const menu = document.getElementById('menu');
-		const btnToggler = document.getElementById('btnNav');
+		/*Traemos los elementos del DOM*/
+		//Elementos del navbar
+		const btnNavSaldo = document.getElementById('navSaldo');
+		const btnNavTarifa = document.getElementById('navTarifa');
+		const btnNavPerfil = document.getElementById('navPerfil');
+		const btnNavFqs = document.getElementById('navFqs');
 		
-		btnToggler.addEventListener('click', ()=> {
+		//Elementos de la sección botones
+		const btnMenuSaldo = document.getElementById('verSaldo');
+		const btnMenuTarifa = document.getElementById('menuCalcularTarifa');
+		const btnMenuPerfil = document.getElementById('menuPerfil');
+		const btnMenuFqs = document.getElementById('menuFqs');
+
+		// Secciones
+		const seccionBotones = document.getElementById('sectionButtons');
+		const seccionPerfil = document.getElementById('sectionPerfil');
+		const seccionFqs = document.getElementById('sectionFqs');
+
+		//Eventos del Navbar
+		btnNavPerfil.addEventListener('click', function(event) {
 			//event.preventDefault();
-			
-			return menu.style.display = 'none';
+			seccionBotones.classList.add('sectionHide');
+		//	seccionPerfil.classList.remove('sectionHide');
 		});
 }
-
