@@ -2,7 +2,10 @@
   text-align: center;
   width: 100%;
   background-color: #333333;
+  position: relative;
+  color:#ffffff;
 }
+
 .wrapper{
   text-align: center;
   position: relative;
@@ -33,10 +36,22 @@
   color:#ffffff;
 }
 
-.btn-secondary{
+.btnPrin{
   text-align: center;
   width: 100%;
-  background-color: #404242;
+  background-color: transparent;
+  color:#ffffff;
+}
+
+.btnMenu{
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  color:#ffffff;
+  background-color: #FFA400;
+  border-radius: 0%;
+  border: none;
+  margin: 10px;
 }
 
 #content{
@@ -44,18 +59,41 @@
   width: 100%;
 }
 
-.btnPrin{
-  background-color: #FFA200;
-  border-radius: 0%;
-  border: none;
-  color: #404242;
+#principal{
+  text-align: center;
+  background-color: #333333;
   width: 100%;
-  font-size: 10px;
+  height: 100%;
+  padding: 5%;
+  color:#ffffff;
 }
 
-#contentBtn{
+#space{
   padding: 20%;
 }
 .cols{
   padding: 20%;
+}
+
+#logo{
+  text-align: left;
+  width: 20%;
+}
+
+#title{
+  color:#FFA200;
+  font-family: Helvetica;
+  font-size: 150%;
+  padding: 10px;
+}
+
+#fondoUser{
+  text-align: center;
+  color:#FFA200;
+  padding: 10px;
+}
+
+#user{
+  text-align: center;
+  border-radius: 50%;
 }

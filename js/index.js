@@ -15,6 +15,7 @@ window.onload = (()=>{
     //let expReg = /.*\d.{8}$/; //"(?=.*\d).{8}"
     if(/^\d{8}$/.test(password)){
       if(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(email)){
+        window.localStorage.setItem('correo',email);
         window.location.href = 'home.html';
       }else{
         alertE.innerHTML= `<div class="alert alert-danger" role="alert">
